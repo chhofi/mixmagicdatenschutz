@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixMagic - Cocktail App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .card h3 {
+            color: #555;
+            margin: 20px 0 10px 0;
+            font-size: 1.3rem;
+        }
+        
+        .card p, .card li {
+            margin-bottom: 10px;
+            color: #666;
+        }
+        
+        .card ul {
+            margin-left: 20px;
+        }
+        
+        .contact {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            opacity: 0.8;
+            margin-top: 40px;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍸 MixMagic</h1>
+            <p>Die ultimative Cocktail-App für perfekte Drinks</p>
+        </div>
+        
+        <div class="card">
+            <h2>Über MixMagic</h2>
+            <p>MixMagic ist eine innovative mobile App, die dir hilft, perfekte Cocktails zu mixen. Mit präzisen Rezepten, intelligenter Waagen-Integration und einer umfangreichen Zutatendatenbank wird jeder Drink zum Meisterwerk.</p>
+            
+            <h3>Features:</h3>
+            <ul>
+                <li>📱 Intuitive Benutzeroberfläche</li>
+                <li>⚖️ Bluetooth-Waagen Integration</li>
+                <li>📷 QR-Code Scanner für Zutaten</li>
+                <li>🎮 Cocktail-Spiele für Partys</li>
+                <li>📊 Persönliche Cocktail-Bibliothek</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2 id="privacy">Datenschutzerklärung</h2>
+            <p><strong>Letzte Aktualisierung:</strong> 11. Juni 2025</p>
+            
+            <h3>1. Allgemeine Informationen</h3>
+            <p>Diese Datenschutzerklärung erklärt, wie MixMagic ("wir", "uns", "unsere") Ihre persönlichen Daten sammelt, verwendet und schützt, wenn Sie unsere mobile Anwendung nutzen.</p>
+            
+            <h3>2. Kamera-Berechtigung</h3>
+            <p>Unsere App verwendet die Kamera-Berechtigung ausschließlich für folgende Zwecke:</p>
+            <ul>
+                <li>Scannen von QR-Codes und Barcodes zur Identifikation von Cocktail-Zutaten</li>
+                <li>Erfassung von Produktinformationen für Ihre persönliche Zutatenbibliothek</li>
+            </ul>
+            <p><strong>Wichtig:</strong> Wir speichern keine Kamerabilder auf unseren Servern. Alle Kameradaten werden ausschließlich lokal auf Ihrem Gerät verarbeitet und nicht an externe Server übertragen.</p>
+            
+            <h3>3. Bluetooth-Berechtigung</h3>
+            <p>Die Bluetooth-Berechtigung wird verwendet, um eine Verbindung zu kompatiblen Küchenwaagen herzustellen, damit Sie präzise Cocktail-Zutaten abmessen können.</p>
+            
+            <h3>4. Standort-Berechtigung</h3>
+            <p>Die Standort-Berechtigung wird nur für die Bluetooth Low Energy (BLE) Funktionalität benötigt, wie von Android vorgeschrieben. Wir sammeln oder speichern keine Standortdaten.</p>
+            
+            <h3>5. Datenspeicherung</h3>
+            <p>Alle Ihre Cocktail-Rezepte, Zutatenlisten und Präferenzen werden lokal auf Ihrem Gerät gespeichert. Optional können Sie Ihre Daten mit unserem sicheren Cloud-Service synchronisieren.</p>
+            
+            <h3>6. Datenübertragung</h3>
+            <p>Wir übertragen nur die Daten, die Sie explizit zur Synchronisation freigeben. Kamera- oder Standortdaten werden niemals übertragen.</p>
+            
+            <h3>7. Ihre Rechte</h3>
+            <p>Sie haben das Recht:</p>
+            <ul>
+                <li>Ihre gespeicherten Daten einzusehen</li>
+                <li>Ihre Daten zu korrigieren oder zu löschen</li>
+                <li>Die Datenverarbeitung einzuschränken</li>
+                <li>Ihre Daten zu exportieren</li>
+            </ul>
+            
+            <h3>8. Kontakt</h3>
+            <div class="contact">
+                <p><strong>Verantwortlicher:</strong> Christian Hofmann<br>
+                <strong>Unternehmen:</strong> Hofmann Media Produktion<br>
+                <strong>E-Mail:</strong> christian<br>
+                <strong>Ort:</strong> Stuttgart, Deutschland</p>
+            </div>
+            
+            <h3>9. Änderungen dieser Datenschutzerklärung</h3>
+            <p>Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Über wesentliche Änderungen werden wir Sie in der App informieren.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 MixMagic - Hofmann Media Produktion. Alle Rechte vorbehalten.</p>
+        </div>
+    </div>
+</body>
+</html> 
